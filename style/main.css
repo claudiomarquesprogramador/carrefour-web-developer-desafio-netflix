@@ -18,6 +18,7 @@
 body{
     background: var(--preto);
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco);
 }
 
 header .container{
@@ -43,9 +44,23 @@ header nav a:hover{
     color: white;
 }
 
-/*filme principal*/
+/*filme principal parte 4*/
 
 .filme-principal{
     font-size: 16px;
-    /*background: url aula 4 13 minutos achar uma imagem agora*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(https://m.media-amazon.com/images/M/MV5BZjlmNGQ4MTktMGZiMi00Zjg3LTkxMTgtNmJjOTE1NGIyZTVlXkEyXkFqcGdeQXVyNjU4NDYxMzg@._V1_FMjpg_UX1280_.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 40px;
 }
