@@ -1,0 +1,42 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+    --transparente:#333131;
+    --branco:#E5E5E5;
+
+    /*font-family: 'Times New Roman', Times, serif; que recomenda*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--branco); /* prof diz cor #AAA */
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: white;
+}
