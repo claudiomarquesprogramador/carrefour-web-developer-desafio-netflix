@@ -46,15 +46,23 @@ header nav a:hover{
 
 /*filme principal parte 5*/
 
+.container{
+    margin-left: 20px;
+}
+
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(https://m.media-amazon.com/images/M/MV5BZjlmNGQ4MTktMGZiMi00Zjg3LTkxMTgtNmJjOTE1NGIyZTVlXkEyXkFqcGdeQXVyNjU4NDYxMzg@._V1_FMjpg_UX1280_.jpg);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(/img/capa.jpg);
     height: 400px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.filme-principal .container{
+    width: 70%;
 }
 
 .filme-principal .descricao{
@@ -86,4 +94,14 @@ header nav a:hover{
 
 .botao i{
     margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
