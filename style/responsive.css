@@ -9,6 +9,12 @@
     }
 }
 
+@media screen and (max-width:950px) {
+    #header{
+        height: 41px;
+    }
+}
+
 @media screen and (min-width:1000px) {
     .descricao{
         width: 50%;

@@ -21,6 +21,19 @@ body{
     color: var(--branco);
 }
 
+#principal{
+    width: 100%;
+    height: 56vw;
+    /*background-image: url(/img/capagrande.jpg);*/
+    background: linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20) 100%),url(/img/capagrande2.jpg);
+    background-size: cover;
+}
+
+#header {
+    height: 68px;
+    background-color: transparent;
+}
+
 header .container{
     display: flex;
     align-items: center;
@@ -44,7 +57,7 @@ header nav a:hover{
     color: white;
 }
 
-/*filme principal parte 5*/
+/*filme principal*/
 
 .container{
     margin-left: 20px;
@@ -52,7 +65,7 @@ header nav a:hover{
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(/img/capa.jpg);
+    /*background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(/img/capa.jpg);*/
     height: 400px;
     background-size: cover;
     display: flex;
