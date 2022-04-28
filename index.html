@@ -14,14 +14,10 @@
     <div id="principal">
         <header id="header">
             <div class="container">
-                <div id="logo"><img src="img/logonetflix.png" alt="O nome netflix"></div>
+                <div id="logo" class="container"><img src="img/logonetflix.png" alt="O nome netflix"></div>
                 <nav>
-                    <!--<a href="#">Início</a>
-                    <a href="#">Séries</a>
-                    <a href="#">Filmes</a>
-                    <a href="#">Bombando</a>
-                    <a href="#">Minha lista</a>-->
                     <ul>
+                        <li id="navegar" onmouseover="navega()">Navegar<i class="fa-solid fa-caret-down"></i></li>
                         <li style="font-weight: bold;">Início</li>
                         <li>Séries</li>
                         <li>Filmes</li>
@@ -31,11 +27,10 @@
                 </nav>
             </div>
             <div id="logo2">
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div>Infantil</div>
-                <div><i class="fa-solid fa-bell"></i></div>
-                <div><img src="img/perfilnetflix.png" alt="imagem do usuario netflix"></div>
-                <div><i class="fa-solid fa-arrow-down"></i></div>
+                <div id="logo21" class="menudireita"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div id="logo22" class="menudireita">Infantil</div>
+                <div id="logo23" class="menudireita"><i class="fa-solid fa-bell"></i></div>
+                <div id="logo24" class="menudireita"><img src="img/perfilnetflix.png" alt="imagem do usuario netflix"><i class="fa-solid fa-caret-down"></i></div>
             </div>
         </header>
         <main>
@@ -44,9 +39,9 @@
                     <h3 class="titulo">Anos Incríveis</h3>
                     <p class="descricao">Kevin Arnold vive os assuntos da adolescência (principalmente com seu grande amigo Paul e sua paquera, Winnie Cooper), diversas situações com seus familiares e outros. Enquanto se passam as histórias, os acontecimentos são narrados por um Kevin mais velho e experiente, que descreve o que acontece e conta o que aprendeu de suas experiências.</p>
                     <div class="botoes">
-                        <button role="button" class="botao">
+                        <button role="button" class="botao" id="botao1">
                             <i class="fa-solid fa-play"></i>
-                            ASSISTIR AGORA
+                            ASSISTIR
                         </button>
                         <button role="button" class="botao">
                             <i class="fa-solid fa-circle-info"></i>
@@ -62,7 +57,61 @@
     <div class="carrosel-filmes">
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filme" src="img/filme1.jpg" alt="" srcset="">
+                <img class="box-filme" src="img/filme1.jpg" alt="" srcset="" onclick="myFunction1()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme2.jpg" alt="" srcset="" onclick="myFunction2()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme3.jpg" alt="" srcset="" onclick="myFunction3()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme4.jpg" alt="" srcset="" onclick="myFunction4()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme5.jpg" alt="" srcset="" onclick="myFunction5()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme6.jpg" alt="" srcset="" onclick="myFunction6()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme7.jpg" alt="" srcset="" onclick="myFunction7()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme8.jpg" alt="" srcset="" onclick="myFunction8()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme9.jpg" alt="" srcset="" onclick="myFunction9()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme10.jpg" alt="" srcset="" onclick="myFunction10()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme11.jpg" alt="" srcset="" onclick="myFunction11()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme12.jpg" alt="" srcset="" onclick="myFunction12()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme13.jpg" alt="" srcset="" onclick="myFunction13()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme14.jpg" alt="" srcset="" onclick="myFunction14()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme15.jpg" alt="" srcset="" onclick="myFunction15()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme16.jpg" alt="" srcset="" onclick="myFunction16()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme17.jpg" alt="" srcset="" onclick="myFunction17()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme18.jpg" alt="" srcset="" onclick="myFunction18()">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/filme19.jpg" alt="" srcset="" onclick="myFunction19()">
             </div>
         </div>
     </div>
@@ -70,5 +119,64 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/setup.js"></script>
+    <script>
+        function myFunction1(){
+            alert("O jovem e descolado Will Smith se muda da Filadélfia para morar com seus tios e primos na mansão deles em Bel-Air e tenta se adaptar, sem sucesso, à realidade da elite do local.")
+        }
+        function myFunction2(){
+            alert("A série acompanha a vida, os medos e os dilemas da vida de Ângela, uma menina de 15 anos, em meados dos anos 1990. Mostra suas relações com seus pais, seus amigos e sua vida na escola. Vivendo em um conflito de identidade, ela resolve se afastar das pessoas que a cercavam e passa a andar com novas companhias. Entre elas está seu amor platônico, Jordan Catalano.")
+        }
+        function myFunction3(){
+            alert("Daria Morgendorffer mora com seus pais estressados, focados na carreira, Helen e Jake, e sua implacável irmãzinha fofa e popular, Quinn. Daria e sua companheira pária e melhor amiga, Jane Lane, freqüentam a Lawndale High School, onde estão cercadas por pessoas superficiais e estúpidas. Com seu intelecto aguçado - e até uma língua mais afiada - Daria disseca qualquer um que ela considerasse superficial, o que é praticamente todo mundo.")
+        }
+        function myFunction4(){
+            alert("Buffy é uma jovem que faz parte de uma longa linhagem de guerreiras escolhidas para caçar e destruir vampiros, demônios e outras forças do mal.")
+        }
+        function myFunction5(){
+            alert("A história da série começa na formatura do colegial de Felicity Porter, onde ela pede a Ben Covington, um estudante que ela estivera apaixonada, para assinar seu anuário. Movida pelo comentário dele que desejava ter conhecido ela antes, Felicity muda de planos completamente, deixando de ir para a Universidade de Stanford e indo para Universidade de Nova York, onde Ben iria estudar. Essa decisão irrita seus controladores pais, que não concordam com a ideia de ver sua filha morando sozinha numa cidade grande. Felicity deixa sua casa em Palo Alto, Califórnia, rumo a Nova York. Mas quando chega em Nova York, Felicity descobre que Ben não faz ideia do que ela sente por ele, mas isso não a impede de continuar seguindo seu coração.")
+        }
+        function myFunction6(){
+            alert("Para o grupo de adolescentes, formado por Dawson, Joey, Pacey e Jen, passar para o 'mundo' adulto não poderia ser mais difícil. Em Capeside, uma pequena cidade do litoral perto de Boston, eles convivem com os mais diferentes tipos de problemas no cotidiano, o que os fazem crescer e entender melhor o mundo em que vivem. Agora cada um precisa decidir o rumo de suas vidas. Não é nada fácil, mas, com amor e amizade, esse caminho será mais fácil de encarar.")
+        }
+        function myFunction7(){
+            alert("A trama gira em torno da adolescente Lindsay Weir (Linda Cardellini) e seu irmão Sam Weir (John Francis Daley), que frequentam a McKinley High School no início dos anos 80, nos subúrbios de Detroit, Michigan. Ao ser abalada pela morte da avó, Lindsay perde alguns hábitos e ganha novos fazendo novos amigos, vulgarmente freaks. Este novo estilo de vida de Lindsay traz conflitos às relações com seu irmão mais novo e seus pais.")
+        }
+        function myFunction8(){
+            alert("Em uma pequena cidade que mistura sonhadores, artistas e pessoas comuns, este drama multigeracional sobre família e amizade gira em torno da relação de Lorelai Gilmore e sua filha, Rory.")
+        }
+        function myFunction9(){
+            alert("Antes da vida como Super-Homem, o jovem Clark Kent encara os problemas da adolescência enquanto aprende a controlar seus poderes e usá-los para proteger a cidade de Smallville.")
+        }
+        function myFunction10(){
+            alert("Nas mansões por trás dos muros, tudo parece ser perfeito. Quando Ryan Atwood, um adolescente problemático que vive se metendo em roubadas, chega em Orange County com o advogado Sandy Cohen, ele começa a descobrir que nem tudo ali naquele lugar é tão perfeito como aparenta.")
+        }
+        function myFunction11(){
+            alert("Nathan e Lucas são dois meio irmãos que só tem em comum o pai Dan Scott e o dom para jogar basquete. Nathan foi criado como o queridinho do papai e sempre teve de tudo, ele é ídolo do time de basquete e o garoto mais popular da escola, enquanto o solitário Lucas foi criado por sua mãe Karen e pelo tio paterno Keith, com muita dificuldade e, apesar de ser um excelente jogador de basquete, só joga por diversão. O destino faz com que as vidas dos dois se cruzem e Lucas tem a chance de jogar novamente no time do colégio, o que provoca a raiva de Nathan e do seu pai que não quer que nada ou ninguém venha atrapalhar a trajetória profissional que ele sonhou para si no passado e agora traçou para o seu filho. A disputa entre os garotos não vai ser apenas pelo controle da quadra de basquete, mas também pelo amor da bela Peyton, uma líder de torcida e atual namorada de Nathan.")
+        }
+        function myFunction12(){
+            alert("Na cidade fictícia de Neptune, Califórnia, a estudante Veronica Mars vai do ensino médio à faculdade enquanto trabalha como investigadora particular sob a tutela de seu pai, o detetive.")
+        }
+        function myFunction13(){
+            alert("Esta premiada série dramática centra-se na vida em Dillon, Texas, onde o futebol colegial reúne a comunidade - e o drama da vida nas pequenas cidades ameaça destruí-lo.")
+        }
+        function myFunction14(){
+            alert("Um grupo de alunos de uma escola rica de Manhattan parece se safar de tudo, menos de uma blogueira anônima que acompanha cada passo que dão.")
+        }
+        function myFunction15(){
+            alert("Com pouca supervisão dos adultos e muitas festas, um grupo de adolescentes de Bristol, na Inglaterra, tenta descobrir sobre a vida e relacionamentos. A cada duas temporadas, a série vai acompanhar um grupo de amigos diferentes, sendo que cada um deles compõe uma 'geração'. Na temporada 7, personagens das gerações anteriores retornam para explorar como serão suas vidas enquanto adultos.")
+        }
+        function myFunction16(){
+            alert("O professor de espanhol Will Schuester (Matthew Morrison) resolve comandar o coral da escola, Glee Club. Tentando dar nova vida ao grupo, ele procura diferentes alunos, populares e nerds, como Rachel Berry (Lea Michele), Kurt Hummel (Chris Colfer), Finn Hudson (Cory Monteith), Quinn Fabray (Dianna Agron) e Brittany Pierce (Heather Morris). Schuester tenta equilibrar a sua vida pessoal, enquanto ensaia com os seus novos alunos, mas logo começa a enfrentar as armadilhas da treinadora Sue Sylvester (Jane Lynch).")
+        }
+        function myFunction17(){
+            alert("Situada na década de 1990, a história de My Mad Fat Diary acompanha a vida de Rae (Sharon Rooney), uma jovem obesa de 16 anos que vive em Lincolnshire com sua mãe excêntrica (Claire Rushbrook). Recém saída de um hospital psiquiátrico, ela se vê jogada em um mundo no qual não se sente à vontade.")
+        }
+        function myFunction18(){
+            alert("Nova série de comédia da MTV norte-americana chamado “Faking It”, que conta a história de duas melhores amigas que se amam – mas de forma ligeiramente diferente. Depois de inúmeras tentativas fracassadas de se tornarem populares, as meninas são erroneamente consideradas homossexuais e por isso se tornam celebridades na escola. Aproveitando-se dos rumores de que são lésbicas, elas usam os boatos para se promoverem socialmente na escola, sendo seduzidas pela fama recém-descoberta, Karma e Amy decidem manter a trama romântica.")
+        }
+        function myFunction19(){
+            alert("Na Nova York de 1977, a talentosa juventude do South Bronx persegue sonhos e uma nova forma de expressão que mudará a história da música.")
+        }
+    </script>
 </body>
 </html>

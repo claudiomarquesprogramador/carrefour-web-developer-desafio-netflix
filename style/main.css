@@ -36,6 +36,7 @@ body{
     background-color: transparent;
     display: flex;
     background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    justify-content: space-between;
 }
 
 header .container{
@@ -44,14 +45,22 @@ header .container{
     justify-content: space-between; /*olhar*/
 }
 
+#logo{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-right: 25px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
 #logo img{
     max-width: 92.5px;
     min-width: 48px;
     width: 10vw;
-    height: auto;
-    margin-right: 25px;
-    /*margin-left: 4vw;
-    margin-right: 4vw;*/
+    height: 31px;
+    display: flex;
+    
 }
 
 /*header nav a{
@@ -69,6 +78,11 @@ header ul{
     display: flex;
 }
 
+#navegar {
+    display: none;
+    font-size: 14px;
+}
+
 header ul li{
     list-style-type: none;
     margin-left: 18px;
@@ -78,6 +92,26 @@ header ul li{
 
 #logo2{
     display: flex;
+    margin-right: 4vw;
+}
+
+.menudireita{
+    min-width: 50px;
+    max-width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logo22{
+    font-size: 14px;
+}
+
+#logo24 img{
+    width: 60%;
+    height: 32px;
+    margin-right: 9px;
 }
 
 /*filme principal*/
@@ -121,15 +155,25 @@ header ul li{
     font-size: 12px;
     cursor: pointer;
     transition: .3s ease all;
+    border-radius: 4px;
 }
 
 .botao:hover{
-    background-color: white;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.660);
 }
 
 .botao i{
     margin-right: 8px;
+}
+
+#botao1{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#botao1:hover{
+    background-color: rgba(255, 255, 255, 0.726);
 }
 
 .box-filme{
