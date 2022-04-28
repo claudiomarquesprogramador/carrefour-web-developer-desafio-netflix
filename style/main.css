@@ -20,8 +20,7 @@ body{
 #principal{
     width: 100%;
     height: 56vw;
-    /*background: url(../img/capagrande2.jpg);*/
-    background: linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20) 100%),url(../img/capagrande2.jpg); /*assim a imagem não apareceu no github*/
+    background: linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20) 100%),url(../img/capagrande2.jpg);
     background-size: cover;
 }
 
