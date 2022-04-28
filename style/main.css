@@ -3,8 +3,6 @@
     --preto:#141414;
     --transparente:#333131;
     --branco:#E5E5E5;
-
-    /*font-family: 'Times New Roman', Times, serif; que recomenda*/
 }
 
 *{
@@ -12,8 +10,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/*elementos base*/
 
 body{
     background: var(--preto);
@@ -24,9 +20,9 @@ body{
 #principal{
     width: 100%;
     height: 56vw;
-    background: linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20) 100%),url(/img/capagrande2.jpg);
+    /*background: linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20) 100%),url(/img/capagrande2.jpg); assim a imagem não apareceu no github*/
+    background-image: url(/img/capagrande2.jpg);
     background-size: cover;
-    
 }
 
 #header {
@@ -42,7 +38,7 @@ body{
 header .container{
     display: flex;
     align-items: center;
-    justify-content: space-between; /*olhar*/
+    justify-content: space-between;
 }
 
 #logo{
@@ -60,19 +56,7 @@ header .container{
     width: 10vw;
     height: 31px;
     display: flex;
-    
 }
-
-/*header nav a{
-    text-decoration: none;
-    color: white; prof diz cor #AAA. mais claro só pra destacar
-    margin-right: 10px;
-    font-size: 14px;
-}
-
-header nav a:hover{
-    color: white;
-}*/
 
 header ul{
     display: flex;
@@ -114,15 +98,12 @@ header ul li{
     margin-right: 9px;
 }
 
-/*filme principal*/
-
 .container{
     margin-left: 4vw;
 }
 
 .filme-principal{
     font-size: 16px;
-    /*background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(/img/capa.jpg);*/
     height: 400px;
     background-size: cover;
     display: flex;
